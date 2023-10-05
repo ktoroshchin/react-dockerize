@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  react-docker:
+    build: ./react-docker
+    container_name: react-d
+    ports: 
+      - '3000:3000'
+    volumes:
+      - .:/app
